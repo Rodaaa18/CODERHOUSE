@@ -124,11 +124,15 @@ body{
     cursor: pointer;
 }
   /* ----------------------------------------------------Body -----------------------------------------------------------------------*/
+  .vehiculos{
+    
+    grid-area: ve;
+  }
   .notice {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
     width:100%;
     height: 100%;
     background: url("https://cdn.group.renault.com/ren/ar/banners-home/renault-home-banner-r12-tablet-001.jpg.ximg.medium.webp/c00d3e714f.webp") no-repeat  center;
@@ -140,11 +144,10 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    align-content: center;
     align-items: flex-start;
     border: 2px white solid;
-    width: 70%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     background: linear-gradient(
       rgb(255, 255, 255, 0.7),
       rgba(255, 254, 254, 0.7)
@@ -192,6 +195,7 @@ body{
     height: 187vh;
   }
   .container__r12__img {
+    
     width: 100vw;
     height: 750px;
   }
@@ -268,6 +272,7 @@ body{
   /* ------------------------------------------------------------------------------------------------------ */
 
   .card__container {
+    grid-area: ve;
     font-family: "Roboto", sans-serif;
     width: 100%;
     display: grid;
@@ -318,11 +323,14 @@ body{
     border: 2px solid black;
     height: 350px;
     transition: transform 0.3s ease-in-out;
+    
   }
   .card:hover {
     filter: opacity(0.9);
     transform: scale(1.04);
+    
   }
+  
   .carImage {
     width: 250px;
   }
