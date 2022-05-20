@@ -7,21 +7,140 @@
     <link rel="stylesheet" href="index.css">
     <script src="http://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/renault-logo (1).png" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="css/animate.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Renault</title>
-    <script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+   
 </head>
-<body>
-    <header class="header"> 
+<body class="home">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <main class="first" id="first">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+             <a class="navbar-brand" href="./index.html">
+                    <img src="./images/renault-logo (1).png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                    RENAULT
+             </a>
+              <a class="navbar-brand" href="./pages/Vehiculos.html">Vehiculos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#renEmpresas">Empresas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#renSusten">Renault Sustentable</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/Atencion.html">Atencion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <section class="main">
+            <section class="submenu">
+                <div class="helper__container">
+                    <a href="./pages/Contacto.html" class="helper"></a>
+                </div>
+            </section>
+            <aside class="vehiculos">
+                <div class="notice">
+                    <card class="notice__card">
+                        <h2 class="notice__titulo">CONOCÉ LA HISTORIA DE GONZALO, ALBERTO Y SU DESADO RENAULT 12</h2>
+                        <p class="notice__p">El amor de un nieto que hizo todo para cumplir el sueño de su abuelo: tener el auto que siempre quiso</p>
+                        <button type="submit" class="btn"> > Conocé más</button>
+                    </card> 
+                </div>
+            </aside>            
+          </section>
+    </main>
+    <section class="renSusten" id="renSusten">
+        <div class="renSusten__home">
+            <h2>RENAULT SUSTENTABLE</h2>
+            <ul class="renSusten__list">
+                <li><a href="">SUSTENTABILIDAD</a></li>
+                <li><a href="">INCLUSIÓN</a></li>
+                <li><a href="">AMBIENTE</a></li>
+                <li><a href="">SEGURIDAD</a></li>
+                <li><a href="">ESTRATEGIA DE SUSTENTABILIDAD</a></li>
+                <li><a href="">NOVEDADES Y GALERÍA</a></li>
+                <li><a href="">FUNDACIÓN RENAULT</a></li>
+            </ul>
+        </div>
+        <aside class="card_cont">
+                <div class="card_sust1">
+                    <h2>INCLUSIÓN</h2>
+                    <img src="https://cdn.group.renault.com/ren/ar/sustentabilidad/pagina-principal/renault-editorial-sustentabilidad-principal-007.jpg.ximg.largex2.webp/fa88772a7b.webp" class="img_card" alt="">
+                    <div class="card__p">
+                        <p>Integramos a la comunidad local empoderando a poblaciones vulnerables.</p>
+                    </div>
+                    <div>
+                        <a class="vermas"href="">ver más</a>
+                    </div>                    
+                </div>
+                <div class="card_sust2">
+                    <h2>AMBIENTE</h2>
+                    <img src="https://cdn.group.renault.com/ren/ar/sustentabilidad/pagina-principal/renault-editorial-sustentabilidad-principal-008.jpg.ximg.largex2.webp/ddf61bd122.webp" class="img_card" alt="">
+                    <div class="card__p">
+                        <p>Minimizamos nuestra huella ambiental a través de la gestión de residuos y economía circular.</p>
+                    </div>
+                    <div>
+                        <a class="vermas"href="">ver más</a>
+                    </div>                    
+                </div>
+                <div class="card_sust3">
+                    <h2>SEGURIDAD</h2>
+                    <img src="https://cdn.group.renault.com/ren/ar/sustentabilidad/pagina-principal/renault-editorial-sustentabilidad-principal-009.jpg.ximg.largex2.webp/7706eef5db.webp" class="img_card" alt="">
+                    <div class="card__p">
+                        <p>Promovemos el desarrollo de tecnología para la seguridad de los conductores de nuestros vehículos.</p>
+                    </div>
+                    <div>
+                        <a class="vermas"href="">ver más</a>
+                    </div>                    
+                </div>
+                
+        </aside>
+    </section>
+    <section class="renEmpresas" id="renEmpresas">
+        <div class="renEmpresas__top">
+            <h2>EMPRESAS</h2>
+        </div>
+        <section class="renEmpresas__pro">
+            <div class="renEmpresas__pro__img">                
+                <div class="renEmpresas__pro__img__text">
+                    <h3>RENAULT PRO+</h3>
+                    <p> <b>Soluciones para clientes profesionales</b> <br> 
+                     Renault Pro+ es una marca experta creada especialmente para ofrecer un tratamiento personalizado y soluciones a medida para el cliente profesional.</p>
+                </div>               
+            </div>
+            <div class="renEmpresas__prom__img">                
+                <div class="renEmpresas__prom__img__text">
+                    <h3>HACE MÁS DE UN SIGLO</h3>
+                    <p>Hace más de un siglo Renault está presente en el mercado de vehículos comerciales para proporcionar a clientes profesionales, productos y servicios que se adapten a sus necesidades específicas.</p>
+                </div>               
+            </div>
+        </section>
+        <section class="renEmpresas__red">
+            <div class="renEmpresas__red__img">                
+                <div class="renEmpresas__red__img__text">
+                    <h3>CENTROS RENAULT PRO+</h3>
+                    <h4>Nuestros expertos a tu servicio</h4>
+                </div>               
+            </div>
+        
+            <div class="renEmpresas__redm__img">                
+                <div class="renEmpresas__redm__img__text">
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.8779830284034!2d-64.24435048530442!3d-31.472542506118725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3d5feed6e59%3A0xa3d172b74b0a6e47!2sRenault%20Argentina%20-%20Planta%20Santa%20Isabel!5e0!3m2!1ses-419!2sar!4v1652478729675!5m2!1ses-419!2sar" class="mapaR" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                </div>               
+            </div>
+        </section>
+    </section>
+    <!-- <header class="header"> 
         <div class="renault">
             <a href="./index.html" class="renault__logo"></a>
         </div> 
@@ -65,40 +184,9 @@
             </ul>  
         </div>
                
-    </header>
-    <section class="submenu">
-        <div class="helper__container">
-            <a href="./pages/Contacto.html" class="helper"></a>
-        </div>
-    </section>
-    <aside class="vehiculos">
-        <div class="notice">
-            <card class="notice__card">
-                <h2 class="notice__titulo">CONOCÉ LA HISTORIA DE GONZALO, ALBERTO Y SU DESADO RENAULT 12</h2>
-                <p class="notice__p">El amor de un nieto que hizo todo para cumplir el sueño de su abuelo: tener el auto que siempre quiso</p>
-                <button type="submit" class="btn"> > Conocé más</button>
-            </card> 
-        </div>
-    </aside>
-    <footer class="footer">
-            <ul class="footer__content">
-                <p>Redes Sociales</p>
-                <li><a target="_blank" href="https://www.facebook.com/RenaultArgentina">
-                    <img id="fb" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/facebook.svg.asset.svg/6d5120c171.svg" alt="">
-                </a></li>
-                <li><a target="_blank" href="https://twitter.com/RenaultArg">
-                    <img id="tw" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/twitter.svg.asset.svg/da9701ec29.svg" alt="">
-                </a></li>
-                <li><a target="_blank" href="https://www.instagram.com/renaultarg/?hl=es">
-                    <img id="in" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/instagram.svg.asset.svg/5949070f17.svg" alt="">
-                </a></li>
-                <li><a target="_blank" href="https://www.youtube.com/user/RenaultArg">
-                    <img id="yt" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/youtube.svg.asset.svg/60a20f2bf7.svg" alt="">
-                </a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/company/renault/">
-                    <img id="ld" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/Linkedin.svg.asset.svg/a528fea32b.svg" alt="">
-                </a></li>
-            </ul>
-    </footer>
+    </header> -->
+    
+   
+    
 </body>
 </html>

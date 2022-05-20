@@ -6,7 +6,157 @@
     box-sizing: border-box;
     list-style: none;
 }
-body{
+.home{
+   display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "hom"
+                         "vehi"
+                         "empr"
+                         "rsust"
+                         "aten"
+                         "contac";
+    height: 600vh;
+}
+.first{
+  grid-area: hom;
+}
+.renSusten{
+  grid-area: vehi;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows:0.5fr 0.5fr ;
+  grid-template-areas: "ve1 ve1 ve1"
+                       "ve2 ve2 ve2" ;
+}
+.renSusten__home{
+  grid-area: ve1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.renSusten__list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 30%;
+}
+.renSusten__list li a{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  min-width: 120px;
+  padding: 10px;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+.renSusten__list li a:hover{
+  color: yellow;  
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.renEmpresas{
+  grid-area: empr;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows:0.5fr 1.25fr 1.25fr ;
+  grid-template-areas: "em1 em1"
+                       "em2 em3"
+                       "em2 em3" ;
+}
+.renEmpresas__top{
+  grid-area: em1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+.renEmpresas__pro{
+  grid-area: em2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "ti"
+                       "texto";
+}
+.renEmpresas__pro__img{
+  grid-area: ti;  
+}
+.renEmpresas__prom__img{
+  grid-area: texto;  
+}
+.renEmpresas__prom__img__text{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  color: black;
+  
+}
+.renEmpresas__pro__img__text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.group.renault.com/ren/ar/empresas/renault-pro-plus/renault-editorial-renault-pro-plus-header-001.jpg.ximg.mediumx2.webp/c6f1a97db3.webp") no-repeat center center;
+  background-size: cover;
+}
+
+.renEmpresas__red{
+  grid-area: em3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "ti2"
+                       "texto2";
+}
+.renEmpresas__red__img{
+  grid-area: ti2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.group.renault.com/ren/ar/empresas/red-pro-plus/renault-editorial-red-pro-plus-header-001.jpg.ximg.medium.webp/13bfe6b4e1.webp") no-repeat center center;
+  background-size: cover;
+}
+.renEmpresas__redm__img{
+  grid-area: texto2;
+  width: 100%;
+  height: 100%;
+}
+.mapaR{
+  width: 100%;
+  height: 240px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: "veh veh veh"
+                         "fot fot fot";
+    height: 92vh;
+    width: 100vw;
+}
+.body{
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.5fr;
     grid-template-rows: 15% 75% 10%;
@@ -109,6 +259,7 @@ body{
 
 /*-----------------------------------------------------Helper----------------------------------------------------------------------- */
 .helper__container{
+  grid-area: sum;
     display: flex;
     position: absolute;
     justify-content: flex-start;
@@ -125,9 +276,9 @@ body{
 }
   /* ----------------------------------------------------Body -----------------------------------------------------------------------*/
   .vehiculos{
-    
-    grid-area: ve;
+    grid-area: veh;
   }
+  
   .notice {
     display: flex;
     flex-flow: column wrap;
@@ -144,10 +295,11 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    align-content: center;
     align-items: flex-start;
     border: 2px white solid;
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     background: linear-gradient(
       rgb(255, 255, 255, 0.7),
       rgba(255, 254, 254, 0.7)
@@ -195,13 +347,12 @@ body{
     height: 187vh;
   }
   .container__r12__img {
-    
     width: 100vw;
     height: 750px;
   }
   /*--------------------------------------------------------------------------Footer ------------------------------------------------*/
   .footer {  
-    grid-area: ft;
+    grid-area: fot;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     color: white; 
     display: flex;
@@ -272,7 +423,6 @@ body{
   /* ------------------------------------------------------------------------------------------------------ */
 
   .card__container {
-    grid-area: ve;
     font-family: "Roboto", sans-serif;
     width: 100%;
     display: grid;
@@ -323,14 +473,11 @@ body{
     border: 2px solid black;
     height: 350px;
     transition: transform 0.3s ease-in-out;
-    
   }
   .card:hover {
     filter: opacity(0.9);
     transform: scale(1.04);
-    
   }
-  
   .carImage {
     width: 250px;
   }
@@ -465,12 +612,14 @@ body{
   text-shadow: 5px 2px 2px rgb(146, 145, 145);
 }
 .card_cont{
+  grid-area: ve2;
   font-family: "Roboto", sans-serif;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
+  grid-template-columns: repeat(auto-fill, 320px);
   grid-auto-rows: minmax(400px, auto);
   grid-auto-flow: dense;
   gap: 8%; 
+  margin-left: 5.5%;
 }
 .card_sust1{
   border: 2px solid black;
@@ -479,8 +628,9 @@ body{
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-  height: 80%;
+  height: 90%;
   margin: auto;
+  margin-left: 20%;
   transition: transform 0.3s ease-in-out;
 }
 .card_sust1:hover {
@@ -504,8 +654,9 @@ body{
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-  height: 80%;
+  height: 90%;
   margin: auto;
+  margin-left: 20%;
   transition: transform 0.3s ease-in-out;
 }
 .card_sust2:hover {
@@ -519,8 +670,9 @@ body{
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-  height: 80%;
+  height: 90%;
   margin: auto;
+  margin-left: 20%;
   transition: transform 0.3s ease-in-out;
 }
 .card_sust3:hover {
