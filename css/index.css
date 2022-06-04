@@ -3,9 +3,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none; }
+  list-style: none;
+  font-family: "Roboto", sans-serif; }
 
 /*------------------------------------------------------- Home -----------------------------------------------------*/
+.d-flex-column, .notice, .contacto__head, .contentForm, .atenc__img, .iframe, .renSusten__home, .card_sust1, .card_sust2, .card_sust3, .renEmpresas__top, .renEmpresas__prom__img__text, .renEmpresas__pro__img__text, .renEmpresas__red__img__text, .vehiculos__home, .card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+
+.d-flex-row, .notice__card, .container__r12, .renSusten__list, .renSusten__list li a, .card__p, .vehiculos__list, .vehiculos__list li a, .footer__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+
 .first {
   grid-area: hom; }
 
@@ -21,9 +34,6 @@
   grid-area: veh; }
 
 .notice {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
   align-content: flex-start;
   width: 100%;
   height: 100%;
@@ -31,8 +41,6 @@
   background-size: cover; }
 
 .notice__card {
-  display: flex;
-  flex-flow: row wrap;
   justify-content: flex-start;
   align-content: center;
   align-items: flex-start;
@@ -40,22 +48,16 @@
   width: 50%;
   height: 50%;
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 254, 254, 0.7));
-  margin: 50px auto 0 15px;
-  padding: 20px;
+  margin: 50px auto 0 25px;
+  padding: 1rem;
   animation: slider 3s ease-in-out; }
 
-@keyframes slider {
-  0% {
-    transform: translateX(-850px); }
-  100% {
-    transform: translateX(0px); } }
-
 .notice__titulo {
-  font-size: 32px; }
+  font-size: 2rem; }
 
 .notice__p {
   margin-top: 25px;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 700; }
 
 .btn {
@@ -63,51 +65,44 @@
   color: white;
   border: none;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 3px;
-  font-size: 15px;
-  margin-top: 35px; }
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 2rem;
+  /*35 px*/ }
 
 .container__r12 {
-  display: flex;
-  position: absolute;
-  flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: flex-start;
+  position: absolute;
   z-index: -1;
   width: 100%;
   height: 187vh; }
 
 .container__r12__img {
   width: 100vw;
-  height: 750px; }
+  height: 750px;
+  /*750px*/ }
+
+@keyframes slider {
+  0% {
+    transform: translateX(-850px); }
+  100% {
+    transform: translateX(0px); } }
 
 /*-----------------------------------------------------------Forms --------------------------------------------------*/
 .contacto {
   grid-area: contac; }
 
-.contacto__head {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center; }
-
 .contentForm {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
   height: 80%; }
 
 /* Atencion */
 .atenc {
-  grid-area: aten; }
+  grid-area: aten;
+  height: 100vh; }
 
 .atenc__img {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.group.renault.com/ren/ar/home/renault-range.jpg.ximg.largex2.webp/9356c6ac88.webp") no-repeat center center;
   background-size: cover;
   height: 20%; }
@@ -116,10 +111,6 @@
   color: whitesmoke; }
 
 .iframe {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-content: center;
   height: 80%;
   width: 100%;
   overflow: auto; }
@@ -141,30 +132,21 @@
 
 .renSusten__home {
   grid-area: ve1;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center; }
+  flex-flow: column nowrap; }
 
 .renSusten__list {
-  display: flex;
-  flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
   width: 90%;
   height: 30%;
   margin: 2%; }
 
 .renSusten__list li a {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   align-content: center;
   text-decoration: none;
   color: white;
   background-color: black;
   min-width: 120px;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 4px;
   transition: transform 0.3s ease-in-out; }
 
@@ -186,16 +168,39 @@
 .card_sust1 {
   border: 2px solid black;
   background: rgba(245, 245, 245, 0.603);
-  display: flex;
-  flex-flow: column nowrap;
   justify-content: space-around;
-  align-items: center;
   height: 90%;
   margin: auto;
   margin-left: 20%;
   transition: transform 0.3s ease-in-out; }
 
 .card_sust1:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04); }
+
+.card_sust2 {
+  border: 2px solid black;
+  background: rgba(245, 245, 245, 0.603);
+  justify-content: space-around;
+  height: 90%;
+  margin: auto;
+  margin-left: 20%;
+  transition: transform 0.3s ease-in-out; }
+
+.card_sust2:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04); }
+
+.card_sust3 {
+  border: 2px solid black;
+  background: rgba(245, 245, 245, 0.603);
+  justify-content: space-around;
+  height: 90%;
+  margin: auto;
+  margin-left: 20%;
+  transition: transform 0.3s ease-in-out; }
+
+.card_sust3:hover {
   filter: opacity(0.9);
   transform: scale(1.04); }
 
@@ -209,38 +214,6 @@
   text-decoration: underline 3px black;
   color: black; }
 
-.card_sust2 {
-  border: 2px solid black;
-  background: rgba(245, 245, 245, 0.603);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 90%;
-  margin: auto;
-  margin-left: 20%;
-  transition: transform 0.3s ease-in-out; }
-
-.card_sust2:hover {
-  filter: opacity(0.9);
-  transform: scale(1.04); }
-
-.card_sust3 {
-  border: 2px solid black;
-  background: rgba(245, 245, 245, 0.603);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 90%;
-  margin: auto;
-  margin-left: 20%;
-  transition: transform 0.3s ease-in-out; }
-
-.card_sust3:hover {
-  filter: opacity(0.9);
-  transform: scale(1.04); }
-
 .img_card {
   width: 100%; }
 
@@ -248,10 +221,6 @@
   font-weight: 700;
   margin: 2%;
   font-size: 0.8rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
   height: 22%;
   color: black; }
 
@@ -265,11 +234,7 @@
   height: 100vh; }
 
 .renEmpresas__top {
-  grid-area: em1;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-content: center; }
+  grid-area: em1; }
 
 .renEmpresas__pro {
   grid-area: em2;
@@ -287,20 +252,13 @@
 .renEmpresas__prom__img__text {
   width: 100%;
   height: 80%;
-  display: flex;
-  flex-flow: column nowrap;
   justify-content: space-evenly;
-  align-items: center;
   align-content: center;
   color: black; }
 
 .renEmpresas__pro__img__text {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
   align-content: center;
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.group.renault.com/ren/ar/empresas/renault-pro-plus/renault-editorial-renault-pro-plus-header-001.jpg.ximg.mediumx2.webp/c6f1a97db3.webp") no-repeat center center;
@@ -317,10 +275,7 @@
   grid-area: ti2;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
   justify-content: space-evenly;
-  align-items: center;
   align-content: center;
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.group.renault.com/ren/ar/empresas/red-pro-plus/renault-editorial-red-pro-plus-header-001.jpg.ximg.medium.webp/13bfe6b4e1.webp") no-repeat center center;
@@ -337,32 +292,22 @@
 
 /*-------------------------------------------------------- Vehiculos-------------------------------------------------- */
 .vehiculos__home {
-  display: flex;
-  flex-flow: column wrap;
   justify-content: space-between;
-  align-items: center;
   height: 20%; }
 
 .vehiculos__list {
-  display: flex;
-  flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
   width: 100%;
   height: 30%;
   margin: 5% 0 5% 0; }
 
 .vehiculos__list li a {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-content: center;
   text-decoration: none;
   color: white;
   background-color: black;
   min-width: 120px;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 1rem;
+  border-radius: 5px;
   transition: transform 0.3s ease-in-out; }
 
 .vehiculos__list li a:hover {
@@ -371,15 +316,10 @@
   transform: scale(1.04); }
 
 .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 254, 254, 0.7));
-  padding: 15px;
-  box-sizing: border-box;
+  padding: 1rem;
   margin: 20px 5px 5px 20px;
   text-align: center;
-  flex-direction: column;
   border: 2px solid black;
   height: 350px;
   transition: transform 0.3s ease-in-out; }
@@ -396,13 +336,10 @@
   height: 14.5%; }
 
 .footer__content {
-  display: flex;
-  flex-flow: row wrap;
   justify-content: space-around;
   gap: 10px;
   align-content: center;
-  align-items: center;
-  padding: 8px;
+  padding: 1rem;
   width: 100%;
   height: 100%;
   margin: 5% 0 0 0; }
@@ -444,23 +381,16 @@
     grid-template-areas: "ve1 ve2" "ve1 ve2"; }
   .renSusten__home {
     grid-area: ve1;
-    display: flex;
-    flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%; }
   .renSusten__list {
-    display: flex;
-    flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
     height: 90%;
     padding: 0; }
   .renSusten__list li {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
     align-items: flex-start;
     width: 100%;
     margin: 0; }
@@ -497,8 +427,6 @@
   .mapaR {
     height: 60%; }
   .vehiculos__list {
-    display: flex;
-    flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
     width: 50%;

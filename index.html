@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="160 cara">
     <link rel="stylesheet" href="./css/index.css">
     <script src="http://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/renault-logo (1).png" type="image/x-icon">
@@ -26,19 +28,19 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="./pages/Vehiculos.html">Vehiculos</a>
+                    <a class="nav-link" href="#vehiculos">Vehiculos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#renEmpresas">Empresas</a>
+                    <a class="nav-link" aria-current="page" href="#renEmpresas">Empresas</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#renSusten">Renault Sustentable</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./pages/Atencion.html">Atencion</a>
+                    <a class="nav-link" href="#atencion">Atencion</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -55,7 +57,7 @@
                     <card class="notice__card">
                         <h2 class="notice__titulo">CONOCÉ LA HISTORIA DE GONZALO, ALBERTO Y SU DESADO RENAULT 12</h2>
                         <p class="notice__p">El amor de un nieto que hizo todo para cumplir el sueño de su abuelo: tener el auto que siempre quiso</p>
-                        <button type="submit" class="btn"> > Conocé más</button>
+                        <button type="submit" class="btn btn-dark"> > Conocé más</button>
                     </card> 
                 </div>
             </aside>            
@@ -142,7 +144,7 @@
             </div>
         </section>
     </section>
-    <section class="rsust">
+    <section class="rsust" id="vehiculos">
         <header class="vehiculos__home">
            <h2>VEHICULOS</h2>           
             <ul class="vehiculos__list">
@@ -258,7 +260,7 @@
             </div>
         </main>
     </section>
-    <section class="atenc">
+    <section class="atenc" id="atencion">
         <div class="atenc__img">
             <h2 class="atencion__p"> BUSCA TU CONCESIONARIO</h2>
             <p class="atencion__p">¡Tu concesionario más cercano está a solo un click!</p>
@@ -267,7 +269,7 @@
             <iframe class="iframe_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.8779830284034!2d-64.24435048530442!3d-31.472542506118725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3d5feed6e59%3A0xa3d172b74b0a6e47!2sRenault%20Argentina%20-%20Planta%20Santa%20Isabel!5e0!3m2!1ses-419!2sar!4v1652478729675!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
          </div>
     </section>
-    <section class="contacto">
+    <section class="contacto" id="contacto">
         <header class="contacto__head">
             <h2>Contacto</h2>
         </header>
@@ -278,12 +280,12 @@
                     <div class="mb-8">
                         <form action="">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre..." required minlength="2" maxlength="15" pattern="[A-Za-z]+" title="Solo puede ingresar letras">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre..." required minlength="4" maxlength="15" pattern="[A-Za-z]+" title="Solo puede ingresar letras">
                             <label for="apellido" class="form-label" >Apellido</label>
-                            <input type="text" class="form-control" id="apellido" placeholder="Apellido..." required minlength="2" maxlength="15">
+                            <input type="text" class="form-control" id="apellido" placeholder="Apellido..." required minlength="4" maxlength="15">
                             <label for="mail" class="form-label">Email</label>
                             <input type="email" class="form-control" id="mail" placeholder="name@example.com" required minlength="9" maxlength="25">
-                            <label for="consulta" class="form-label">Example textarea</label>
+                            <label for="consulta" class="form-label">Consulta:</label>
                             <textarea class="form-control form__textarea" id="consulta" rows="3" placeholder="Consulta..." required minlength="15" maxlength="300" title="Ingrese mas de 15 carácteres y menos de 300"></textarea>
                             <button type="submit" class="btn btn-dark">Enviar</button>
                         </form>
@@ -310,54 +312,6 @@
                 </a></li>
             </ul>
     </footer>
-    </section>
-    <!-- <header class="header"> 
-        <div class="renault">
-            <a href="./index.html" class="renault__logo"></a>
-        </div> 
-        <div class="toggle">         
-            
-            <label for="check" class="bar-btn">
-                <i class="fas fa-bars"></i>
-            </label>      
-                 
-        </div>    
-        <input type="checkbox" name="check" id="check">  
-        <nav class="navbar">                                  
-            <ul class="navbar__list">
-                <li><a class="navbar__item" href="./pages/Vehiculos.html"> Vehiculos |</a></li>
-                <li><a class="navbar__item" href="./pages/Empresas.html"> Empresas |</a></li>
-                <li><a class="navbar__item" href="./pages/RenaultSust.html"> Renault Sustentable |</a></li>
-                <li><a class="navbar__item" href="./pages/Atencion.html"> Atención |</a></li>
-                <li><a class="navbar__item" href="./pages/Contacto.html"> Contacto</a></li>
-            </ul> 
-        </nav> 
-        <div class="logs">
-            <img class="logs__lupa" src="./images/lupa.png" alt="">
-            <img class="logs__ubi" src="./images/ubicacion.png" alt="">
-            <img class="logs__carrito" src="./images/carritorenaulkt.png" alt="">
-            <img class="logs__car" src="./images/renaultcar.png" alt="">
-        </div>
-        <div class="subnav">
-            <ul class="subnav__lista">
-                    <li>                        
-                        <a class="subnav__item" href="">Buscador</a>
-                    </li>
-                    <li>
-                        <a class="subnav__item" href="./pages/Atencion.html">Concesionarios</a>                        
-                    </li>
-                    <li>
-                        <a  class="subnav__item" href="">Tienda Oficial Postventa</a>                        
-                    </li>
-                    <li>
-                        <a  class="subnav__item" href="">My Renault</a>                        
-                    </li> 
-            </ul>  
-        </div>
-               
-    </header> -->
-    
-   
-    
+    </section>    
 </body>
 </html>
