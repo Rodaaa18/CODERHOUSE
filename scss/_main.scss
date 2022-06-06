@@ -4,7 +4,7 @@
 @import 'colors';
 @import 'unidades_medidas';
 @import 'variables';
-
+@import 'mixins';
 * {
     margin: 0;
     padding: 0;
@@ -37,8 +37,7 @@
   grid-template-rows: 90% 10%;
   grid-template-areas: "veh veh veh"
                        "fot fot fot";
-  height: 92vh;
-  width: 100vw;
+ @include sizes(100vw, 92vh);
 }
 .vehiculos{
   grid-area: veh;
@@ -367,6 +366,7 @@
   }
   .card {
     @extend .d-flex-column;
+    justify-content: space-between;
     background: linear-gradient(
       rgba(255, 255, 255, 0.7),
       rgba(255, 254, 254, 0.7)

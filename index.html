@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Renault, Argentina, Córdoba, Santa Isabel, Auto, Autos, Automoviles, Vehículos">
     <meta name="description" content="Bienvenido al sitio web oficial de Renault Argentina. Descubrí la gama completa: automóviles, vehículos eléctricos, utilitarios, sport y más. Te esperamos.">
     <link rel="stylesheet" href="./css/index.css">
     <script src="http://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
@@ -57,7 +57,30 @@
                     <card class="notice__card">
                         <h2 class="notice__titulo">CONOCÉ LA HISTORIA DE GONZALO, ALBERTO Y SU DESADO RENAULT 12</h2>
                         <p class="notice__p">El amor de un nieto que hizo todo para cumplir el sueño de su abuelo: tener el auto que siempre quiso</p>
-                        <button type="submit" class="btn btn-dark"> > Conocé más</button>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"> > Conocé más</button>
+                        <!-- MODAL -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">LA HISTORIA DE GONZALO Y ALBERTO</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>
+                                    Este 2022 estaba a la vuelta de la esquina la noche de Año Nuevo cuando Alberto fue sorprendido por su nieto Gonzalo. Se detuvo el festejo, la música y los saludos. Fue entonces cuando se develó una hermosa sorpresa.
+
+                                    Alberto, oriundo de General Pico (La Pampa), que se jubiló como mozo a los 76 años y luego de una vida de trabajo, nunca pudo comprarse un auto. Sin embargo, como recompensa y reconocimiento a su esfuerzo, uno de sus nietos le cumplió ese sueño. Después de ahorrar por años, Gonzalo logró comprar el Renault 12 modelo 93, que su abuelo siempre quiso tener
+                                  </p>
+                                  <iframe width="100%" height="20%" src="https://www.youtube.com/embed/PdVWXZp6h6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                  <button type="button" class="btn btn-primary">Conocer más</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </card> 
                 </div>
             </aside>            
@@ -287,7 +310,25 @@
                             <input type="email" class="form-control" id="mail" placeholder="name@example.com" required minlength="9" maxlength="25">
                             <label for="consulta" class="form-label">Consulta:</label>
                             <textarea class="form-control form__textarea" id="consulta" rows="3" placeholder="Consulta..." required minlength="15" maxlength="300" title="Ingrese mas de 15 carácteres y menos de 300"></textarea>
-                            <button type="submit" class="btn btn-dark">Enviar</button>
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#sendModal"> Enviar</button>
+                            <div class="modal fade" id="sendModal" tabindex="-1" aria-labelledby="sendModal" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="sendModal">Su consulta ha sido enviada con éxito</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>
+                                          ¡Consulta enviada con éxito!
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </form>
                     </div>
                 </div>
