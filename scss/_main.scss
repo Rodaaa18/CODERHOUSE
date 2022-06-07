@@ -291,8 +291,10 @@
   .renEmpresas__prom__img__text{
     width: $total_width;
     height: ($total_height - 20%);
-    @extend .d-flex-column;
-    justify-content: space-evenly;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     align-content: center;
     color: $black;    
   }
@@ -428,6 +430,7 @@
     height: $px_logos;
     list-style: $list_s;
   }
+
   @media (max-width:1227px){
     .renSusten{
       grid-area: aten;
@@ -436,6 +439,9 @@
       grid-template-rows:0.5fr 0.5fr ;
       grid-template-areas: "ve1 ve2"
                            "ve1 ve2" ;
+    }
+    .card_cont{
+      grid-area: ve2;
     }
     .renSusten__home{
       grid-area: ve1;
@@ -498,6 +504,15 @@
           "em2 em2"
           "em3 em3";
     }
+    .renEmpresas__top{
+      grid-area: em1;
+    }
+    .renEmpresas__pro{
+      grid-area: em2;
+    }
+    .renEmpresas__red{
+      grid-area: em3;
+    }
     .mapaR{
       height: $total_height - 40%;
     }
@@ -520,20 +535,81 @@
       height: $total_height - 30%;
       
     }
+    .renEmpresas__prom__img__text{
+      height: 100%;
+    }
+    .card{
+      margin: auto;
+    }
   }
   @media (max-width:1166px){
     .notice__card{
         height: $total_height - 30%;
     }
+    .card_sust1{
+      width: $total_width - 50%;
+    }
+    .card_sust2{
+      width: $total_width - 50%;
+    }
+    .card_sust3{
+      width: $total_width - 50%;
+    }
   }
   @media (max-width:836px){
     .notice__card{
-      width: $total_width;
+      width: 80%;
     }
   }
   @media (max-width:765px){
     .notice__card{
-      width: $total_width;
+      width: 80%;
       height: $total_height - 30%;
     }
+    .card_sust1{
+      width: $total_width - 40%;
+      margin: 0;
+    }
+    .card_sust2{
+      width: $total_width - 40%;
+      margin: 0;
+    }
+    .card_sust3{
+      width: $total_width - 40%;
+      margin: 0;
+    }
   }
+  @media (max-width :647px){
+    .card_sust1{
+      width: $total_width - 20%;
+    }
+    .card_sust2{
+      width: $total_width - 20%;
+    }
+    .card_sust3{
+      width: $total_width - 20%;
+    }
+    .card_cont{
+      margin: 0;
+    }
+    .renSusten__home{
+      display: none;
+    }
+  }
+
+  @media (max-width:403px){
+    .notice__card{
+      justify-content: center;
+      align-items: center;
+      height: 95%;
+    }
+    .notice__titulo{
+      font-size: 1.5rem;
+    }
+    .btn{
+      font-size: 1.2rem;
+    }
+  }
+
+
+
