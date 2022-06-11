@@ -9,7 +9,7 @@
 }
 
 /*------------------------------------------------------- Home -----------------------------------------------------*/
-.d-flex-column, .notice, .contacto__head, .contentForm, .atenc__img, .iframe, .renSusten__home, .card_sust1, .card_sust2, .card_sust3, .renEmpresas__top, .renEmpresas__prom__img__text, .renEmpresas__pro__img__text, .renEmpresas__red__img__text, .vehiculos__home, .card {
+.d-flex-column, .notice, .contacto__head, .contentForm, .atenc__img, .iframe, .renSusten__home, .card_sust1, .card_sust2, .card_sust3, .renEmpresas__top, .renEmpresas__pro__img__text, .renEmpresas__red__img__text, .vehiculos__home, .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,9 +405,19 @@
 .renEmpresas__prom__img__text {
   width: 100%;
   height: 80%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
   color: black;
@@ -598,6 +608,12 @@
         grid-template-rows: 0.5fr 0.5fr;
         grid-template-areas: "ve1 ve2" "ve1 ve2";
   }
+  .card_cont {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: ve2;
+  }
   .renSusten__home {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
@@ -677,6 +693,24 @@
         grid-template-rows: 0.5fr 1.25fr 1.25fr;
         grid-template-areas: "em1 em1" "em2 em2" "em3 em3";
   }
+  .renEmpresas__top {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: em1;
+  }
+  .renEmpresas__pro {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: em2;
+  }
+  .renEmpresas__red {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: em3;
+  }
   .mapaR {
     height: 60%;
   }
@@ -703,24 +737,87 @@
   .notice__card {
     height: 70%;
   }
+  .renEmpresas__prom__img__text {
+    height: 100%;
+  }
+  .card {
+    margin: auto;
+  }
 }
 
 @media (max-width: 1166px) {
   .notice__card {
     height: 70%;
   }
+  .card_sust1 {
+    width: 50%;
+  }
+  .card_sust2 {
+    width: 50%;
+  }
+  .card_sust3 {
+    width: 50%;
+  }
 }
 
 @media (max-width: 836px) {
   .notice__card {
-    width: 100%;
+    width: 80%;
   }
 }
 
 @media (max-width: 765px) {
   .notice__card {
-    width: 100%;
+    width: 80%;
     height: 70%;
+  }
+  .card_sust1 {
+    width: 60%;
+    margin: 0;
+  }
+  .card_sust2 {
+    width: 60%;
+    margin: 0;
+  }
+  .card_sust3 {
+    width: 60%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 647px) {
+  .card_sust1 {
+    width: 80%;
+  }
+  .card_sust2 {
+    width: 80%;
+  }
+  .card_sust3 {
+    width: 80%;
+  }
+  .card_cont {
+    margin: 0;
+  }
+  .renSusten__home {
+    display: none;
+  }
+}
+
+@media (max-width: 403px) {
+  .notice__card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 95%;
+  }
+  .notice__titulo {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
