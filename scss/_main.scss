@@ -387,24 +387,30 @@
   
 /*--------------------------------------------------------------- Footer--------------------------------------------- */
 .footer {  
+  margin-top: 2%;
     grid-area: fot;
     background: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.822));
     color: $white;     
     height: 14.5%;
   }
-  .footer__content{    
+
+  .footer__content{   
     @extend .d-flex-row;
     justify-content: space-around;
     gap: 10px;
-    align-content: center;
+    align-items: flex-start;
     padding: $padding_standar;
     width: $total_width ;
     height: $total_height;
-    margin: 5% 0 0 0;
+  }
+  .footer__item{
+    margin: 4%;
+    width: 100%;
   }
   .footer__content li a{
       text-decoration: $text_d_none;
       color: $white;
+      display: inline;
   }
   #fb{
     width: $px_logos;
@@ -432,68 +438,7 @@
   }
 
   @media (max-width:1227px){
-    .renSusten{
-      grid-area: aten;
-      display: grid;
-      grid-template-columns: 0.2fr 1.7fr;
-      grid-template-rows:0.5fr 0.5fr ;
-      grid-template-areas: "ve1 ve2"
-                           "ve1 ve2" ;
-    }
-    .card_cont{
-      grid-area: ve2;
-    }
-    .renSusten__home{
-      grid-area: ve1;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: $total_width;
-    }
-    .renSusten__list{
-      justify-content: flex-start;
-      align-items: flex-start; 
-      width: $total_width;
-      height: $total_height - 10%; 
-      padding: 0;
-    }
-    .renSusten__list li{
-      align-items: flex-start;
-      width: $total_width;
-      margin: 0;
-    }
-    .renSusten__list li a{
-      margin: 10% 0 10% 0;
-      width: $total_width;
-    }
-    .card_cont{
-      grid-template-columns: 0.1fr 1.8fr;
-      grid-template-rows: minmax(400px, auto);
-      grid-template-areas: "na ca "
-                           "na ca2"
-                           "na ca3";
-      position: relative;
-      overflow: auto;
-    }
     
-    .card_sust1{
-      grid-area: ca;
-      height: $total_height;
-      width: $total_width - 60%;
-      padding: 1%;
-    }
-    .card_sust2{
-      grid-area: ca2;
-      height: $total_height;
-      width: $total_width - 60%;
-    }
-    .card_sust3{
-      grid-area: ca3;
-      height: $total_height;
-      width: $total_width - 60%;
-    }
-    .img_card{
-      width: 100%;
-    }
     .renEmpresas{
       grid-area: empr;
       display: grid;
@@ -546,15 +491,6 @@
     .notice__card{
         height: $total_height - 30%;
     }
-    .card_sust1{
-      width: $total_width - 50%;
-    }
-    .card_sust2{
-      width: $total_width - 50%;
-    }
-    .card_sust3{
-      width: $total_width - 50%;
-    }
   }
   @media (max-width:836px){
     .notice__card{
@@ -566,17 +502,11 @@
       width: 80%;
       height: $total_height - 30%;
     }
-    .card_sust1{
-      width: $total_width - 40%;
-      margin: 0;
+    .iframe_map{
+      width: 100%;
     }
-    .card_sust2{
-      width: $total_width - 40%;
-      margin: 0;
-    }
-    .card_sust3{
-      width: $total_width - 40%;
-      margin: 0;
+    .footer_menu_dos{
+      display: none;
     }
   }
   @media (max-width :647px){
@@ -592,9 +522,6 @@
     .card_cont{
       margin: 0;
     }
-    .renSusten__home{
-      display: none;
-    }
   }
 
   @media (max-width:403px){
@@ -608,6 +535,23 @@
     }
     .btn{
       font-size: 1.2rem;
+    }
+  }
+  @media (max-width:375px){
+    .card_cont{
+      margin: auto;      
+    }
+    .card_sust1{
+      margin: auto;
+    }
+    .card_sust2{
+      margin: auto;
+    }
+    .card_sust3{
+      margin: auto;
+    }
+    .footer_menu_one{
+      display: none;
     }
   }
 

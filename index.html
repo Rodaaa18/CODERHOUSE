@@ -7,14 +7,20 @@
     <meta name="keywords" content="Renault, Argentina, Córdoba, Santa Isabel, Auto, Autos, Automoviles, Vehículos">
     <meta name="description" content="Bienvenido al sitio web oficial de Renault Argentina. Descubrí la gama completa: automóviles, vehículos eléctricos, utilitarios, sport y más. Te esperamos.">
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="http://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/renault-logo (1).png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <title>Renault</title>
    
 </head>
-<body class="home">       
+<body class="home">  
+    <script>
+        AOS.init();
+      </script>     
     <main class="first" id="first">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -89,18 +95,27 @@
     <section class="renSusten" id="renSusten">
         <div class="renSusten__home">
             <h2>RENAULT SUSTENTABLE</h2>
-            <ul class="renSusten__list">
-                <li><a href="">SUSTENTABILIDAD</a></li>
-                <li><a href="">INCLUSIÓN</a></li>
-                <li><a href="">AMBIENTE</a></li>
-                <li><a href="">SEGURIDAD</a></li>
-                <li><a href="">ESTRATEGIA DE SUSTENTABILIDAD</a></li>
-                <li><a href="">NOVEDADES Y GALERÍA</a></li>
-                <li><a href="">FUNDACIÓN RENAULT</a></li>
-            </ul>
+            <div class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subnav"navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="subnav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="">SUSTENTABILIDAD</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">INCLUSIÓN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">AMBIENTE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">SEGURIDAD</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">ESTRATEGIA DE SUSTENTABILIDAD</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">NOVEDADES Y GALERÍA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">FUNDACIÓN RENAULT</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
         </div>
         <aside class="card_cont">
-                <div class="card_sust1">
+                <div class="card_sust1" data-aos="flip-left">
                     <h2>INCLUSIÓN</h2>
                     <img src="https://cdn.group.renault.com/ren/ar/sustentabilidad/pagina-principal/renault-editorial-sustentabilidad-principal-007.jpg.ximg.largex2.webp/fa88772a7b.webp" class="img_card" alt="">
                     <div class="card__p">
@@ -110,7 +125,7 @@
                         <a class="vermas"href="">ver más</a>
                     </div>                    
                 </div>
-                <div class="card_sust2">
+                <div class="card_sust2" data-aos="flip-left">
                     <h2>AMBIENTE</h2>
                     <img src="https://cdn.group.renault.com/ren/ar/sustentabilidad/pagina-principal/renault-editorial-sustentabilidad-principal-008.jpg.ximg.largex2.webp/ddf61bd122.webp" class="img_card" alt="">
                     <div class="card__p">
@@ -120,7 +135,7 @@
                         <a class="vermas"href="">ver más</a>
                     </div>                    
                 </div>
-                <div class="card_sust3">
+                <div class="card_sust3" data-aos="flip-left">
                     <h2>SEGURIDAD</h2>
                     <img src="https://cdn.group.renault.com/ren/ar/sustentabilidad/pagina-principal/renault-editorial-sustentabilidad-principal-009.jpg.ximg.largex2.webp/7706eef5db.webp" class="img_card" alt="">
                     <div class="card__p">
@@ -169,23 +184,32 @@
     </section>
     <section class="rsust" id="vehiculos">
         <header class="vehiculos__home">
-           <h2>VEHICULOS</h2>           
-            <ul class="vehiculos__list">
-                <h3 id="automoviles">Automóviles:</h3>
-                <li><a href="">utilitarios</a></li>
-                <li><a href="">eléctricos</a></li>
-                <li><a href="">sport</a></li>
-                <li><a href="">pick-ups</a></li>
-                <li><a href=""> > Oportunidades</a></li>
-                <li><a href=""> > Encontrá un concesionario</a></li>
-                <li><a href=""> > Catálogos</a></li>
-                <li><a href=""> > Manuales</a></li>
-            </ul>
+           <h2 class="m-5">VEHICULOS</h2> 
+           <div class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subnav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="subnav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="">utilitarios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">eléctricos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">sport</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">pick-ups</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""> > Oportunidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""> > Encontrá un concesionario</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""> > Catálogos</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>     
         </div> 
         </header>
         <main class="container">
-            <div class="row_m row">
-                <div class="card animate__animated animate__fadeInDown" style="width: 18rem;">
+            <div class="row_m row ">
+                <div class="card bg-dark border-dark mt-4 animate__animated animate__fadeInDown" data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="600" style="width: 18rem;">
                     <img src="https://www.renault.com.ar/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY2/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Far.co.rplug.renault.com%2Fproduct%2Fmodel%2FB4M%2Frenault-x52-bicorps-ph2-vp%2Fc%2FA-TEKNH" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="titulo">SANDERO</h5>
@@ -197,7 +221,9 @@
                     </div>
                 </div>
 
-                <div class="card animate__animated animate__fadeInDown" style="width: 18rem;">
+                <div class="card bg-dark border-dark mt-4 animate__animated animate__fadeInDown"  data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="600"style="width: 18rem;">
                     <img src="https://www.renault.com.ar/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY2/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Far.co.rplug.renault.com%2Fproduct%2Fmodel%2FB4M%2Frenault-x52-bicorps-ph2-vp%2Fc%2FA-TEKNH" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="titulo">SANDERO GT LINE</h5>
@@ -209,7 +235,9 @@
                     </div>
                 </div>
 
-                <div class="card animate__animated animate__fadeInDown" style="width: 18rem;">
+                <div class="card bg-dark border-dark mt-4 animate__animated animate__fadeInDown"  data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="600" style="width: 18rem;">
                     <img src="https://www.renault.com.ar/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY1/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Far.co.rplug.renault.com%2Fproduct%2Fmodel%2FB4M%2Frenault-x52-bicorps-ph2-vp%2Fc%2FA-ENS_0MDL2PSL1SERIELIM1_-TEHNP" class="card-img-top" alt="...">
                     <div class="card-body">            
                         <h5 class="titulo">STEPWAY</h5>
@@ -221,7 +249,9 @@
                     </div>
                 </div>
 
-                <div class="card animate__animated animate__fadeInDown" style="width: 18rem;">
+                <div class="card bg-dark border-dark mt-4 animate__animated animate__fadeInDown" data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="600" style="width: 18rem;">
                     <img src="https://www.renault.com.ar/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY2/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Far.co.rplug.renault.com%2Fproduct%2Fmodel%2FL4M%2Flogan%2Fc%2FA" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="titulo">LOGAN</h5>
@@ -233,7 +263,9 @@
                     </div>
                 </div>
 
-                <div class="card animate__animated animate__fadeInDown" style="width: 18rem;">
+                <div class="card bg-dark border-dark mt-4 animate__animated animate__fadeInDown" data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="600" style="width: 18rem;">
                     <img src="https://www.renault.com.ar/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY2/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Far.co.rplug.renault.com%2Fproduct%2Fmodel%2F67K%2Fnuevo-kangoo%2Fc%2FA-ENS_0MDL2P1SERIELIM3_" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="titulo">KANGOO</h5>
@@ -245,7 +277,9 @@
                     </div>
                 </div>
 
-                <div class="card animate__animated animate__fadeInDown" style="width: 18rem;">
+                <div class="card bg-dark border-dark mt-4 animate__animated animate__fadeInDown"  data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="600"style="width: 18rem;">
                     <img src="https://www.renault.com.ar/agg/vn/unique/ONE_DACIA_PP_XLARGE_DENSITY2/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Far.co.rplug.renault.com%2Fproduct%2Fmodel%2FJM1%2Fhjd-nuevo-duster%2Fc%2FA-TECNM-ENS_0MDL2P1SERIESPE3_" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="titulo">DUSTER</h5>
@@ -257,7 +291,10 @@
                     </div>
                 </div>
 
-                <div class="card animate__animated animate__fadeInDown" style="width: 18rem;">
+                <div class="card bg-dark border-dark mt-4 animate__animated animate__fadeInDown" 
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="600" style="width: 18rem;">
                     <img src="https://www.renault.com.ar/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY2/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Far.co.rplug.renault.com%2Fproduct%2Fmodel%2FMAH%2Fcaptur%2Fc%2FA-BIXUE-ENS_0MDL2PSL1SERIELIM3_" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="titulo">CAPTUR</h5>
@@ -269,7 +306,9 @@
                     </div>
                 </div>
 
-                <div class="card animate__animated animate__fadeInDown" style="width: 18rem;">
+                <div class="card bg-dark border-dark mt-4 mb-4 animate__animated animate__fadeInDown" data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="600" style="width: 18rem;">
                     <img src="https://www.renault.com.ar/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY2/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Far.co.rplug.renault.com%2Fproduct%2Fmodel%2FZGH%2Fkoleos-ph2%2Fc%2FA-ENS_0MDL2P1SERIELIM1_-TEKQA" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="titulo">KOLEOS</h5>
@@ -293,7 +332,7 @@
          </div>
     </section>
     <section class="contacto" id="contacto">
-        <header class="contacto__head">
+        <header class="contacto__head m-5">
             <h2>Contacto</h2>
         </header>
         <aside class ="contentForm">
@@ -302,13 +341,13 @@
                 <div class="row">
                     <div class="mb-8">
                         <form action="">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre..." required minlength="4" maxlength="15" pattern="[A-Za-z]+" title="Solo puede ingresar letras">
-                            <label for="apellido" class="form-label" >Apellido</label>
+                            <label for="nombre" class="form-label m-2">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre..." required minlength="4" maxlength="15" pattern="[A-Za-z]+" title="Solo puede ingresar letras"> 
+                            <label for="apellido" class="form-label m-2" >Apellido</label>
                             <input type="text" class="form-control" id="apellido" placeholder="Apellido..." required minlength="4" maxlength="15">
-                            <label for="mail" class="form-label">Email</label>
+                            <label for="mail" class="form-label m-2">Email</label>
                             <input type="email" class="form-control" id="mail" placeholder="name@example.com" required minlength="9" maxlength="25">
-                            <label for="consulta" class="form-label">Consulta:</label>
+                            <label for="consulta" class="form-label m-2">Consulta:</label>
                             <textarea class="form-control form__textarea" id="consulta" rows="3" placeholder="Consulta..." required minlength="15" maxlength="300" title="Ingrese mas de 15 carácteres y menos de 300"></textarea>
                             <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#sendModal"> Enviar</button>
                             <div class="modal fade" id="sendModal" tabindex="-1" aria-labelledby="sendModal" aria-hidden="true">
@@ -335,23 +374,45 @@
             </div>     
         </aside>
         <footer class="footer">
-            <ul class="footer__content">
-                <li><a target="_blank" href="https://www.facebook.com/RenaultArgentina">
-                    <img id="fb" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/facebook.svg.asset.svg/6d5120c171.svg" alt=""> Facebook
-                </a></li>
-                <li><a target="_blank" href="https://twitter.com/RenaultArg">
-                    <img id="tw" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/twitter.svg.asset.svg/da9701ec29.svg" alt="">Twitter
-                </a></li>
-                <li><a  target="_blank" href="https://www.instagram.com/renaultarg/?hl=es">
-                    <img id="in" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/instagram.svg.asset.svg/5949070f17.svg" alt=""> Instagram
-                </a></li>
-                <li><a target="_blank" href="https://www.youtube.com/user/RenaultArg">
-                    <img id="yt" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/youtube.svg.asset.svg/60a20f2bf7.svg" alt="">YouTube
-                </a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/company/renault/">
-                    <img id="ld" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/Linkedin.svg.asset.svg/a528fea32b.svg" alt=""> LinkedIn
-                </a></li>
-            </ul>
+            <div class="footer__content">
+                <div class="footer_menu_one">
+                    <ul>
+                        <li class="footer__item"><a   href="">Acerca de Renault</a></li>
+                        <li class="footer__item"><a   href="">Política de privacidad</a></li>
+                        <li class="footer__item"><a   href="">Términos y condiciones</a></li>
+                        <li class="footer__item"><a   href="">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer_menu_dos">
+                    <ul>
+                        <li class="footer__item"><a   href="#vehiculos">Vehiculos</a></li>
+                        <li class="footer__item"><a   href="#renEmpresas">Empresas</a></li>
+                        <li class="footer__item"><a   href="#renSusten">Renault sustentable</a></li>
+                        <li class="footer__item"><a   href="#atencion">Atención</a></li>
+                        <li class="footer__item"><a   href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                       <li class="footer__item"><a   target="_blank" href="https://www.facebook.com/RenaultArgentina">
+                        <img id="fb" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/facebook.svg.asset.svg/6d5120c171.svg" alt=""> Facebook
+                        </a></li>
+                        <li class="footer__item"><a   target="_blank" href="https://twitter.com/RenaultArg">
+                            <img id="tw" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/twitter.svg.asset.svg/da9701ec29.svg" alt="">Twitter
+                        </a></li>
+                        <li class="footer__item"><a    target="_blank" href="https://www.instagram.com/renaultarg/?hl=es">
+                            <img id="in" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/instagram.svg.asset.svg/5949070f17.svg" alt=""> Instagram
+                        </a></li>
+                        <li class="footer__item"><a   target="_blank" href="https://www.youtube.com/user/RenaultArg">
+                            <img id="yt" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/youtube.svg.asset.svg/60a20f2bf7.svg" alt="">YouTube
+                        </a></li>
+                        <li class="footer__item"><a   target="_blank" href="https://www.linkedin.com/company/renault/">
+                            <img id="ld" src="https://cdn.group.renault.com/pictograms/S56-0_Footer/Linkedin.svg.asset.svg/a528fea32b.svg" alt=""> LinkedIn
+                        </a></li> 
+                    </ul>
+                    
+                </div>
+            </div>
     </footer>
     </section>    
 </body>
