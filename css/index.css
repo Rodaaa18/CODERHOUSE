@@ -26,7 +26,7 @@
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
   grid-template-rows: 90% 10%;
-  grid-template-areas: "veh veh veh" "fot fot fot";
+  grid-template-areas: "veh veh veh" "fot fot fot";
   height: 92vh;
   width: 100vw; }
 
@@ -128,7 +128,7 @@
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
   grid-template-rows: 0.5fr 0.5fr;
-  grid-template-areas: "ve1 ve1 ve1" "ve2 ve2 ve2"; }
+  grid-template-areas: "ve1 ve1 ve1" "ve2 ve2 ve2"; }
 
 .renSusten__home {
   grid-area: ve1;
@@ -230,7 +230,7 @@
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   grid-template-rows: 0.5fr 1.25fr 1.25fr;
-  grid-template-areas: "em1 em1" "em2 em3" "em2 em3";
+  grid-template-areas: "em1 em1" "em2 em3" "em2 em3";
   height: 100vh; }
 
 .renEmpresas__top {
@@ -241,7 +241,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 0.5fr;
-  grid-template-areas: "ti" "texto"; }
+  grid-template-areas: "ti" "texto"; }
 
 .renEmpresas__pro__img {
   grid-area: ti; }
@@ -272,7 +272,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 0.5fr;
-  grid-template-areas: "ti2" "texto2"; }
+  grid-template-areas: "ti2" "texto2"; }
 
 .renEmpresas__red__img__text {
   grid-area: ti2;
@@ -387,7 +387,7 @@
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 1.25fr 1.25fr;
-    grid-template-areas: "em1 em1" "em2 em2" "em3 em3"; }
+    grid-template-areas: "em1 em1" "em2 em2" "em3 em3"; }
   .renEmpresas__top {
     grid-area: em1; }
   .renEmpresas__pro {
